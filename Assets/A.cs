@@ -15,7 +15,7 @@ public class A : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        x+=Input.GetAxis("Horizontal");
+        x+=Input.GetAxis("Horizontal")*Time.deltaTime*10;
       transform.position = new Vector2(x,-140);
     }
 }
