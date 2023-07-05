@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class A : MonoBehaviour
 {
-    float x=-30;
+    float x=-32;
     // Start is called before the first frame update
     void Start()
     {
@@ -15,7 +15,7 @@ public class A : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        x+=Input.GetAxis("Horizontal")*Time.deltaTime*10;
-      transform.position = new Vector2(x,-140);
+       x += Input.GetAxis("Horizontal") * Time.deltaTime * 10;
+       transform.position = new Vector2(x,-140);
     }
 }
